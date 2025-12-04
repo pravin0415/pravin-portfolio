@@ -39,9 +39,9 @@ const Footer = () => {
             >
               PRAVIN<span className="text-secondary">.</span>
             </a>
-            <p className="text-muted-foreground text-sm flex items-center gap-1 justify-center md:justify-start">
+            {/* <p className="text-muted-foreground text-sm flex items-center gap-1 justify-center md:justify-start">
               © {currentYear} Made with <Heart className="w-4 h-4 text-secondary fill-secondary" /> by Pravin Garje
-            </p>
+            </p> */}
           </div>
 
           {/* Navigation Links */}
