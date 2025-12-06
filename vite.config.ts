@@ -66,7 +66,7 @@ export default defineConfig(({ mode }) => ({
   },
 
   // Dynamic base (important!)
-  base: mode === "production" ? "/pravin-portfolio/" : "/",
+  base: "/pravin-portfolio",
 
   plugins: [
     react(),
