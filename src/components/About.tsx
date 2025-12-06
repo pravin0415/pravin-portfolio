@@ -13,7 +13,7 @@ const About = () => {
   const handleDownloadResume = () => {
     // Create a placeholder for resume download
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
+    link.href = '/resume(1).pdf';
     link.download = 'Pravin_Garje_Resume.pdf';
     link.click();
   };
