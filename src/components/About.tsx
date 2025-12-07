@@ -10,13 +10,28 @@ const About = () => {
     { value: "100%", label: "Dedication" },
   ];
 
+  // const handleDownloadResume = () => {
+  //   // Create a placeholder for resume download
+  //   const link = document.createElement('a');
+  //   link.href = 'public/resume.pdf';
+  //   link.download = 'Pravin_Garje_Resume.pdf';
+  //   link.click();
+  // };
   const handleDownloadResume = () => {
-    // Create a placeholder for resume download
-    const link = document.createElement('a');
-    link.href = 'public/resume.pdf';
-    link.download = 'Pravin_Garje_Resume.pdf';
-    link.click();
-  };
+  const link = document.createElement('a');
+  
+  // For GitHub Pages with repo name in URL
+  const repoName = 'pravin-portfolio'; // ← CHANGE THIS
+  link.href = `/${pravin-portfolio}/resume.pdf`;
+  
+  // OR if your site is at username.github.io (without repo name)
+  // link.href = '/resume.pdf';
+  
+  link.download = 'Pravin_Garje_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <section id="about" className="py-24 relative">
