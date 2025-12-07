@@ -20,7 +20,7 @@ const About = () => {
 const handleDownloadResume = () => {
   const link = document.createElement('a');
   const baseUrl = window.location.origin;
-  link.href = `${}/resume.pdf`;
+  link.href = `${public/resume.pdf}/resume.pdf`;
   link.download = 'Pravin_Garje_Resume.pdf';
   document.body.appendChild(link);
   link.click();
