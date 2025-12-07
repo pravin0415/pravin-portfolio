@@ -17,16 +17,10 @@ const About = () => {
   //   link.download = 'Pravin_Garje_Resume.pdf';
   //   link.click();
   // };
-  const handleDownloadResume = () => {
+const handleDownloadResume = () => {
   const link = document.createElement('a');
-  
-  // For GitHub Pages with repo name in URL
-  const repoName = 'pravin-portfolio'; // ← CHANGE THIS
-  link.href = `/${pravin-portfolio}/resume.pdf`;
-  
-  // OR if your site is at username.github.io (without repo name)
-  // link.href = '/resume.pdf';
-  
+  const baseUrl = window.location.origin;
+  link.href = `${}/resume.pdf`;
   link.download = 'Pravin_Garje_Resume.pdf';
   document.body.appendChild(link);
   link.click();
